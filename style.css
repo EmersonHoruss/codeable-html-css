@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap");
+
 /* General Styles */
 * {
   box-sizing: border-box;
@@ -5,6 +9,8 @@
 
 body {
   margin: 0;
+  font-family: "Inter", sans-serif;
+  color: hsla(240, 5%, 34%, 1);
 }
 
 /* General Blocks */
@@ -33,6 +39,21 @@ body {
 .header__logo {
   margin: 0;
   margin-right: 64px;
+
+  color: hsla(262, 83%, 58%, 1);
+  font-family: "Familjen Grotesk", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1; /* 100% */
+}
+
+.header__logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header__logo a:hover {
+  color: hsla(263, 70%, 50%, 1);
 }
 
 /* Navigation */
@@ -41,6 +62,11 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  color: hsla(240, 4%, 46%, 1);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1; /* 100% */
 }
 
 .navigation li {
@@ -49,12 +75,36 @@ body {
   margin-right: 8px;
 }
 
+.navigation a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  color: hsla(240, 5%, 34%, 1);
+}
+
+.navigation .active a {
+  color: hsla(262, 83%, 58%, 1);
+}
+
+.navigation .active a:hover {
+  color: hsla(263, 70%, 50%, 1);
+}
+
 /* Footer */
 
 .footer {
   padding-block: 32px;
   text-align: center;
-  border-top: 1px solid #d4d4d8;
+  border-top: 1px solid hsl(240, 5%, 84%);
+
+  color: hsla(240, 4%, 46%, 1);
+}
+
+.footer__text {
+  font-size: 12px;
+  line-height: 20px;
 }
 
 .footer .social-links {
@@ -81,7 +131,7 @@ body {
 /* Hero */
 
 .hero {
-  background-color: #d4d4d8;
+  background-color: hsla(240, 5%, 96%, 1);
 }
 
 .container {
@@ -97,10 +147,32 @@ body {
 .hero__title {
   margin-top: 0;
   margin-bottom: 24px;
+
+  color: hsl(240, 6%, 10%);
+  font-family: "Familjen Grotesk", sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 60px; /* 100% */
 }
 
 .hero__lead {
   margin-block: 24px;
+
+  font-size: 20px;
+  line-height: 32px; /* 160% */
+}
+
+.hero__link {
+  color: hsl(262, 83%, 58%);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px; /* 171.429% */
+  text-decoration: none;
+}
+
+.hero__link:hover {
+  color: hsla(263, 70%, 50%, 1);
+  text-decoration: underline;
 }
 
 .hero--center {
@@ -117,10 +189,17 @@ body {
 
 .articles-section > hr {
   margin-block: 48px;
+  border: 1px solid hsla(240, 6%, 90%, 1);
 }
 
 .articles-section__title {
   margin: 0;
+
+  color: hsl(240, 6%, 10%);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px; /* 111.111% */
+  letter-spacing: -0.9px;
 }
 
 /* Article summary */
@@ -137,28 +216,49 @@ body {
 
 .article-metadata__date {
   margin-right: 16px;
+
+  font-size: 12px;
+  line-height: 16px; /* 133.333% */
 }
 
 /* Category tag */
 .category-tag {
   display: inline-block;
   padding: 6px 12px;
-  background-color: #fafafa;
+  background-color: hsla(0, 0%, 98%, 1);
   border-radius: 9999px;
+
+  font-size: 12px;
+  line-height: 16px; /* 133.333% */
+  color: hsla(240, 5%, 34%, 1);
 }
 
 .article-summary__content {
   display: block;
+  color: inherit;
+  text-decoration: none;
 }
 
 .article-summary__title {
   margin-top: 0px;
   margin-bottom: 20px;
+
+  color: hsl(240, 6%, 10%);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px; /* 133.333% */
+}
+
+.article-summary__content:hover .article-summary__title {
+  color: hsla(263, 70%, 50%, 1);
 }
 
 .article-summary__text {
   margin-top: 20px;
   margin-bottom: 0px;
+
+  font-size: 14px;
+  line-height: 24px; /* 171.429% */
 }
 
 .article-summary__footer {
@@ -180,10 +280,18 @@ body {
 
 .author__info {
   margin-left: 16px;
+
+  font-size: 14px;
+  line-height: 24px; /* 171.429% */
 }
 
 .author__info > * {
   display: block;
+}
+
+.author_name {
+  color: hsl(240, 6%, 10%);
+  font-weight: 600;
 }
 
 /* Article section */
@@ -203,24 +311,50 @@ body {
 
 /* Content */
 
+.content {
+  color: hsl(240, 5%, 26%);
+  font-size: 16px;
+  line-height: 28px;
+}
+
 .content h1 {
   margin-top: 0;
   margin-bottom: 32px;
+
+  color: hsl(240, 6%, 10%);
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 40px;
 }
 
 .content h2 {
   margin-top: 48px;
   margin-bottom: 24px;
+
+  color: hsl(240, 6%, 10%);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .content h3 {
   margin-top: 32px;
   margin-bottom: 12px;
+
+  color: hsl(240, 6%, 10%);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
 }
 
-.content h3 {
+.content h4 {
   margin-top: 24px;
   margin-bottom: 8px;
+
+  color: hsl(240, 6%, 10%);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .content h2 + *,
@@ -248,6 +382,10 @@ body {
 .content figure figcaption {
   margin-top: 12;
   margin-bottom: 0;
+
+  color: hsl(240, 4%, 46%);
+  font-size: 14px;
+  line-height: 20px; /* 142.857% */
 }
 
 .content ol,
@@ -258,6 +396,14 @@ body {
 
 .content li {
   margin-block: 8px;
+}
+
+.content ul li::marker {
+  color: hsla(252, 95%, 85%, 1);
+}
+
+.content ol li::marker {
+  color: hsla(258, 90%, 66%, 1);
 }
 
 .content li p {
@@ -272,6 +418,24 @@ body {
   margin-block: 20px;
 }
 
+.content strong {
+  color: hsla(240, 6%, 10%, 1);
+  font-weight: 600;
+}
+
+.content a {
+  color: hsla(262, 83%, 58%, 1);
+  font-weight: 500;
+}
+
+.content code {
+  color: hsl(240, 6%, 10%);
+  font-family: "Source Code Pro", monospace;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
 .content code::before,
 .content code::after {
   content: "`";
@@ -282,8 +446,16 @@ body {
   padding: 12px 16px;
   background: #27272a;
   border-radius: 6px;
-  color: #e4e4e7;
   overflow: auto;
+
+  color: hsl(240, 6%, 90%);
+  font-family: "Source Code Pro", monospace;
+  font-size: 14px;
+  line-height: 28px; /* 200% */
+}
+
+.content pre code {
+  all: unset;
 }
 
 .content pre code::before,
@@ -300,6 +472,11 @@ body {
 
 .content th {
   padding: 0 8px 8px;
+
+  color: hsl(240, 6%, 10%);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px; /* 171.429% */
 }
 
 .content th:first-child,
@@ -314,14 +491,19 @@ body {
 
 .content td {
   padding: 8px;
+
+  color: hsl(240, 6%, 10%);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
 }
 
 .content th {
-  border-bottom: 1px solid #d4d4d8;
+  border-bottom: 1px solid hsl(240, 5%, 84%);
 }
 
 .content td {
-  border-bottom: 1px solid #e4e4e7;
+  border-bottom: 1px solid hsl(240, 6%, 90%);
 }
 
 .content tr:last-child td {
