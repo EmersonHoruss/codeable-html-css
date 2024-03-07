@@ -1,0 +1,12 @@
+.article {
+  max-width: 672px;
+  margin-inline: auto;
+}
+
+.article__header {
+  margin-bottom: 16px;
+}
+
+.article__header .article-metadata {
+  margin-bottom: 8px;
+}

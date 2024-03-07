@@ -1,0 +1,26 @@
+.author > * {
+  display: inline-block;
+}
+
+.author__avatar {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.author__info {
+  margin-left: 16px;
+}
+
+.author__info > * {
+  display: block;
+
+  font-size: 0.875rem;
+  line-height: 1.5rem; /* 171.429% */
+}
+
+.author__name {
+  color: hsl(0, 0%, 9%);
+  font-weight: 600;
+}
