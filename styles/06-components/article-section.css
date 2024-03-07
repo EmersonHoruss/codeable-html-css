@@ -1,12 +1,14 @@
-.article {
-  max-width: 672px;
+.articles-section {
+  max-width: var(--width-2xl);
   margin-inline: auto;
 }
 
-.article__header {
-  margin-bottom: 16px;
-}
+.articles-section__title {
+  margin: 0;
 
-.article__header .article-metadata {
-  margin-bottom: 8px;
+  color: var(--neutral-900);
+  font-size: var(--font-4xl);
+  font-weight: 700;
+  line-height: var(--leading-10); /* 111.111% */
+  letter-spacing: var(--tracking-tight);
 }

@@ -1,6 +1,6 @@
 .article-metadata__date {
-  margin-right: 16px;
+  margin-right: var(--spacing-4);
 
-  font-size: 0.75rem;
-  line-height: 1rem; /* 133.333% */
+  font-size: var(--font-xs);
+  line-height: var(--leading-4); /* 133.333% */
 }

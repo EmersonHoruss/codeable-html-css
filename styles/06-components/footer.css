@@ -1,15 +1,15 @@
 .footer {
-  padding-block: 32px;
+  padding-block: var(--spacing-8);
   text-align: center;
   border-top: 1px solid #d4d4d8;
 }
 
 .footer .social-links {
   margin: 0 auto;
-  margin-bottom: 32px;
+  margin-bottom: var(--spacing-8);
 }
 
 .footer__copy {
-  font-size: 0.75rem;
-  line-height: 1.25rem; /* 166.667% */
+  font-size: var(--font-xs);
+  line-height: var(--leading-5); /* 166.667% */
 }

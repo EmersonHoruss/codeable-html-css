@@ -10,17 +10,17 @@
 }
 
 .author__info {
-  margin-left: 16px;
+  margin-left: var(--spacing-4);
 }
 
 .author__info > * {
   display: block;
 
-  font-size: 0.875rem;
-  line-height: 1.5rem; /* 171.429% */
+  font-size: var(--font-sm);
+  line-height: var(--leading-6); /* 171.429% */
 }
 
 .author__name {
-  color: hsl(0, 0%, 9%);
+  color: var(--neutral-900);
   font-weight: 600;
 }

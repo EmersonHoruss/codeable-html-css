@@ -1,7 +1,7 @@
 .article-summary {
-  max-width: 576px;
+  max-width: var(--width-xl);
 }
 
 .article-metadata {
-  margin-bottom: 12px;
+  margin-bottom: var(--spacing-2);
 }

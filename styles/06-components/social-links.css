@@ -6,7 +6,7 @@
 
 .social-links li {
   display: inline-block;
-  margin-right: 40px;
+  margin-right: var(--spacing-10);
 }
 
 .social-links li:last-child {

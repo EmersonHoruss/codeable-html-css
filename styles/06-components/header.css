@@ -1,6 +1,7 @@
+/* Header */
 .header {
-  padding: 24px 32px;
-  max-width: 1280px;
+  padding: var(--spacing-6) var(--spacing-8);
+  max-width: var(--width-7xl);
   margin-inline: auto;
 }
 
@@ -10,19 +11,19 @@
 
 .header__logo {
   margin: 0;
-  margin-right: 64px;
+  margin-right: var(--spacing-8);
 }
 
 .header__logo a {
-  color: hsl(263, 70%, 50%);
-  font-family: "Familjen Grotesk", sans-serif;
-  font-size: 1.875rem;
+  color: var(--violet-700);
+  font-family: var(--display), sans-serif;
+  font-size: var(--font-3xl);
   font-weight: 500;
-  line-height: 1.875rem; /* 100% */
+  line-height: 3.75rem; /* 100% */
 
   text-decoration: none;
 }
 
 .header__logo:hover a {
-  color: hsla(263, 70%, 60%, 1);
+  color: var(--primary-hover);
 }
