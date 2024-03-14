@@ -22,17 +22,15 @@
       >>>>>> TEXT-AREA COMPONENT <<<<<<
       <br />
       > DEFAULT
-      <textarea name="" id="" cols="30" rows="2">
-        Velit sem bibendum quis consequat cras congue. Eget lectus tempor eget in ante faucibus sed. Netus amet aliquam urna.
-      </textarea>
+      <textarea cols="30" rows="2">
+Velit sem bibendum quis consequat cras congue. Eget lectus tempor eget in ante faucibus sed. Netus amet aliquam urna.</textarea
+      >
       > DISABLED
-      <textarea name="" id="" cols="30" rows="2" disabled>
-        Velit sem bibendum quis consequat cras congue. Eget lectus tempor eget in ante faucibus sed. Netus amet aliquam urna.
-      </textarea>
+      <textarea cols="30" rows="2" disabled>
+Velit sem bibendum quis consequat cras congue. Eget lectus tempor eget in ante faucibus sed. Netus amet aliquam urna.</textarea
+      >
       > WITH PLACEHOLDER
       <textarea
-        name=""
-        id=""
         cols="30"
         rows="2"
         placeholder="Velit sem bibendum quis consequat cras congue. Eget lectus tempor eget in ante faucibus sed. Netus amet aliquam urna."
@@ -85,11 +83,10 @@
       > CHECKED - DISABLED
       <input type="checkbox" name="html" value="si" checked disabled />
       > CHECKED - ITEM
-      <input type="checkbox" name="html" value="si" checked disabled />
-      > CHECKED - GROUP
       <label class="checkables-item"
         ><input type="checkbox" name="html" value="si" />HTML</label
       >
+      > CHECKED - GROUP
       <fieldset class="checkables">
         <label class="checkables-item"
           ><input type="checkbox" name="html" value="si" />HTML</label
@@ -114,10 +111,76 @@
         <option value="">Selecciona uno</option>
         <option value="AR">Argentina</option>
       </select>
+      >>>>>> FORM FIELD COMPONENT <<<<<<
+      <br />
+      > INPUT
+      <div class="form-field">
+        <label class="form-field__label"> Label </label>
+        <input class="form-field__main-content" placeholder="placeholder" />
+        <span class="form-field__helper-text">Description or help text</span>
+      </div>
+      > TEXT-AREA
+      <div class="form-field">
+        <label class="form-field__label"> Label </label>
+        <textarea
+          class="form-field__mian-content"
+          cols="30"
+          rows="2"
+          placeholder="placeholder"
+        ></textarea>
+        <span class="form-field__helper-text">Description or help text</span>
+      </div>
+      > RADIO
+      <fieldset class="form-field">
+        <legend class="form-field__label">Label</legend>
+        <div class="checkables form-field__main-content">
+          <label class="checkables-item"
+            ><input
+              type="radio"
+              name="sistema"
+              value="windows"
+              disabled
+            />Disabled option</label
+          >
+          <label class="checkables-item"
+            ><input type="radio" name="sistema" value="macos" />Checked
+            option</label
+          >
+          <label class="checkables-item"
+            ><input type="radio" name="sistema" value="linux" />Focused
+            option</label
+          >
+        </div>
+        <span class="form-field__helper-text">Description or help text</span>
+      </fieldset>
+      > CHECKBOX
+      <fieldset class="form-field">
+        <legend class="form-field__label">Label</legend>
+        <div class="checkables form-field__main-content">
+          <label class="checkables-item"
+            ><input type="checkbox" name="html" value="si" disabled />Disabled
+            option</label
+          >
+          <label class="checkables-item"
+            ><input type="checkbox" name="css" value="si" />Checked
+            option</label
+          >
+          <label class="checkables-item"
+            ><input type="checkbox" name="js" value="si" />Focused option</label
+          >
+        </div>
+        <span class="form-field__helper-text">Description or help text</span>
+      </fieldset>
+      > SELECT
+      <div class="form-field">
+        <label class="form-field__label"> Label </label>
+        <select class="form-field__main-content" id="pais" name="pais">
+          <option value="">Selecciona uno</option>
+          <option value="AR">Argentina</option>
+        </select>
+        <span class="form-field__helper-text">Description or help text</span>
+      </div>
     </div>
-
-    >>>>>> FORM FIELD COMPONENT <<<<<<
-    <br />
 
     >>>>>> PANCAKE STACK COMPONENT <<<<<<
     <br />

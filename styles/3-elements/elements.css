@@ -34,6 +34,7 @@ select {
   border-radius: var(--rounded-md);
 
   font-family: Inter, sans-serif;
+  font-size: var(--font-sm);
   color: var(--foreground);
 }
 
