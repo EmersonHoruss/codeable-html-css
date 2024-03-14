@@ -1,19 +1,8 @@
-.section {
-  padding-block: var(--spacing-12);
-}
-
 .container {
   --padding: var(--spacing-4); /* 16px */
   padding-inline: var(--padding);
   max-width: var(--width-7xl);
   margin-inline: auto;
-}
-
-.pancake-stack {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-  height: auto;
 }
 
 @media (min-width: 641px) {

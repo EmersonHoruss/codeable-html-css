@@ -15,7 +15,9 @@
 @import url(3-elements/elements.css);
 
 /* 4. Objects */
-@import url(4-objects/objects.css);
+@import url(4-objects/container.css);
+@import url(4-objects/pancake-stack.css);
+@import url(4-objects/section.css);
 
 /* 5. Components */
 @import url(5-components/header.css);
