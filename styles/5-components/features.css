@@ -1,0 +1,34 @@
+.features {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.features__header {
+  grid-row: 1 / 2;
+}
+
+.features__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row: 2 / -1;
+}
+
+@media (min-width: 641px) {
+  .features__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features__header {
+    grid-column: 1 / 2;
+  }
+
+  .features {
+    grid-column: 2 / 3;
+  }
+}

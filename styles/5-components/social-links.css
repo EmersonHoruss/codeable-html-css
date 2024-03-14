@@ -1,3 +1,4 @@
+/* Social Links */
 .social-links {
   list-style: none;
   padding: 0;
@@ -6,7 +7,7 @@
 
 .social-links li {
   display: inline-block;
-  margin-right: var(--spacing-10);
+  margin-right: 40px;
 }
 
 .social-links li:last-child {

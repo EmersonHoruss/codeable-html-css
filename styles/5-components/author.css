@@ -1,26 +1,27 @@
+/* Author */
+
 .author > * {
   display: inline-block;
 }
 
 .author__avatar {
-  width: 48px;
-  height: 48px;
+  width: 3rem;
+  height: 3rem;
   object-fit: cover;
   border-radius: 50%;
 }
 
 .author__info {
-  margin-left: var(--spacing-4);
+  margin-left: 16px;
+
+  font-size: var(--font-sm);
+  line-height: var(--leading-6);
 }
 
 .author__info > * {
   display: block;
-
-  font-size: var(--font-sm);
-  line-height: var(--leading-6); /* 171.429% */
 }
 
-.author__name {
-  color: var(--neutral-900);
+.author_name {
   font-weight: 600;
 }

@@ -1,44 +1,64 @@
+/* Content */
+
 .content {
-  color: var(--neutral-900);
+  --headings: var(--foreground);
+  --body: var(--foreground);
+  --captions: var(--muted-foreground);
+  --bold: var(--foreground);
+  --code: var(--foreground);
+  --pre: var(--muted);
+  --pre-background: var(--foreground);
+  --hr: var(--border);
+  --td-border: var(--border);
+  --th-border: var(--border-strong);
+  --links: var(--primary);
+  --markers: var(--primary);
+}
+
+.content {
+  color: var(--body);
   font-size: var(--font-base);
-  font-weight: 400;
-  line-height: var(--leading-7); /* 175% */
+  line-height: var(--leading-7);
 }
 
 .content h1 {
   margin-top: 0;
   margin-bottom: var(--spacing-8);
 
-  font-size: var(--font-4xl);
+  color: var(--headings);
   font-weight: 800;
-  line-height: var(--leading-10); /* 111.111% */
+  font-size: var(--font-4xl);
+  line-height: var(--leading-10);
 }
 
 .content h2 {
   margin-top: var(--spacing-12);
   margin-bottom: var(--spacing-6);
 
-  font-size: var(--font-2xl);
+  color: var(--headings);
   font-weight: 700;
-  line-height: var(--leading-8); /* 133.333% */
+  font-size: var(--font-2xl);
+  line-height: var(--leading-8);
 }
 
 .content h3 {
   margin-top: var(--spacing-8);
-  margin-bottom: var(--spacing-2);
+  margin-bottom: var(--spacing-3);
 
-  font-size: var(--font-xl);
+  color: var(--headings);
   font-weight: 600;
-  line-height: var(--leading-8); /* 160% */
+  font-size: var(--font-xl);
+  line-height: var(--leading-8);
 }
 
 .content h4 {
   margin-top: var(--spacing-6);
   margin-bottom: var(--spacing-2);
 
-  font-size: var(--font-base);
+  color: var(--headings);
   font-weight: 600;
-  line-height: var(--leading-6); /* 150% */
+  font-size: var(--font-base);
+  line-height: var(--leading-6);
 }
 
 .content img {
@@ -61,23 +81,23 @@
   margin-top: var(--spacing-3);
   margin-bottom: 0;
 
-  color: var(--neutral-600);
+  color: var(--captions);
   font-size: var(--font-sm);
-  line-height: var(--leading-5); /* 142.857% */
+  line-height: var(--leading-5);
 }
 
 .content ol,
 .content ul {
   margin-block: var(--spacing-5);
-  padding-left: var(--spacing-8);
-}
-
-.content li::marker {
-  color: var(--violet-500);
+  padding-left: 32px;
 }
 
 .content li {
   margin-block: var(--spacing-2);
+}
+
+.content li::marker {
+  color: var(--markers);
 }
 
 .content li p {
@@ -88,24 +108,26 @@
   margin-block: var(--spacing-12);
 }
 
-.content strong {
-  font-weight: 600;
-}
-
-.content a {
-  color: var(--violet-500);
-  font-weight: 500;
-  text-decoration-line: underline;
-}
-
 .content p {
   margin-block: var(--spacing-5);
 }
 
+.content strong {
+  color: var(--bold);
+  font-weight: 600;
+}
+
+.content a {
+  color: var(--links);
+  font-weight: 500;
+}
+
 .content code {
-  font-family: var(--monospace), monospace;
+  color: var(--code);
+  font-family: var(--monospace);
   font-size: var(--font-sm);
   font-weight: 600;
+  line-height: var(--leading-7);
 }
 
 .content code::before,
@@ -115,15 +137,15 @@
 
 .content pre {
   margin-block: var(--spacing-6);
-  padding: var(--spacing-3) var(--spacing-4);
+  padding: 12px 16px;
+  background: var(--pre-background);
   border-radius: var(--rounded-md);
   overflow: auto;
 
-  background-color: hsl(240, 4%, 16%); /* NOT FOUND AS VARIABLE */
-  color: var(--neutral-100);
-  font-family: var(--monospace), monospace;
+  color: var(--pre);
+  font-family: var(--monospace);
   font-size: var(--font-sm);
-  line-height: var(--leading-7); /* 200% */
+  line-height: var(--leading-7);
 }
 
 .content pre code {
@@ -143,12 +165,12 @@
 }
 
 .content th {
-  padding: 0 var(--spacing-2) var(--spacing-2);
-  border-bottom: 1px solid hsl(240, 5%, 84%); /* NOT FOUND AS VARIABLE */
+  padding: 0 8px 8px;
 
+  color: var(--headings);
   font-size: var(--font-sm);
   font-weight: 600;
-  line-height: var(--leading-6); /* 171.429% */
+  line-height: var(--leading-7);
 }
 
 .content th:first-child,
@@ -162,10 +184,19 @@
 }
 
 .content td {
-  padding: var(--spacing-2);
-  border-bottom: 1px solid #e4e4e7;
+  padding: 8px;
+
   font-size: var(--font-sm);
-  line-height: var(--leading-6); /* 171.429% */
+  font-weight: 400;
+  line-height: var(--leading-7);
+}
+
+.content th {
+  border-bottom: 1px solid var(--th-border);
+}
+
+.content td {
+  border-bottom: 1px solid var(--td-border);
 }
 
 .content tr:last-child td {

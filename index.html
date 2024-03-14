@@ -4,22 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Codificable</title>
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Source+Code+Pro:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="/styles/index.css" />
   </head>
-  <body>
-    <header class="header">
+  <body class="pancake-stack">
+    <header class="header container">
       <h1 class="header__logo"><a href="/index.html">Codificable</a></h1>
       <nav class="navigation">
         <ul>
           <li><a href="/blog/index.html">Blog</a></li>
           <li><a href="#">Sobre nosotros</a></li>
         </ul>
+        <button id="navigation__login-text" class="button-default">
+          Login
+        </button>
+        <button id="navigation__login-icon" class="button-icon button-outline">
+          <img
+            src="/assets/icons/menu.svg"
+            style="width: fit-content; height: 16px"
+          />
+        </button>
       </nav>
     </header>
 
@@ -32,7 +35,17 @@
               Únete a la comunidad de desarrolladores de mayor crecimiento de la
               región y lleva tu carrera a un siguiente nivel
             </p>
-            <a href="/blog/index.html">Visita nuestro blog</a>
+            <div class="hero__buttons">
+              <button class="button-default">Iniciar sesión</button>
+              <a class="link-branded" href="/blog/index.html" class="button"
+                >Visita nuestro blog
+                <img
+                  src="/assets/icons/right-arrow.svg"
+                  width="24"
+                  height="24"
+                  alt="Right arrow icon"
+              /></a>
+            </div>
           </div>
         </div>
       </section>
@@ -42,26 +55,42 @@
       <ul class="social-links">
         <li>
           <a href="#"
-            ><img src="/assets/icons/facebook.svg" alt="Facebook icon"
+            ><img
+              src="/assets/icons/facebook.svg"
+              width="24"
+              height="24"
+              alt="Facebook icon"
           /></a>
         </li>
         <li>
           <a href="#"
-            ><img src="/assets/icons/linkedin.svg" alt="LinkedIn icon"
+            ><img
+              src="/assets/icons/linkedin.svg"
+              width="24"
+              height="24"
+              alt="LinkedIn icon"
           /></a>
         </li>
         <li>
           <a href="#"
-            ><img src="/assets/icons/twitter.svg" alt="Twitter icon"
+            ><img
+              src="/assets/icons/twitter.svg"
+              width="24"
+              height="24"
+              alt="Twitter icon"
           /></a>
         </li>
         <li>
           <a href="#"
-            ><img src="/assets/icons/github.svg" alt="GitHub icon"
+            ><img
+              src="/assets/icons/github.svg"
+              width="24"
+              height="24"
+              alt="GitHub icon"
           /></a>
         </li>
       </ul>
-      <small class="footer__copy"
+      <small class="footer__text"
         >&copy; 2023 Codificable - Todos los derechos reservados</small
       >
     </footer>
