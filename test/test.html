@@ -49,27 +49,27 @@
       > CHECKED - DISABLED
       <input type="radio" name="sistema4" value="macos" checked disabled />
       > RADIO ITEM
-      <label class="radios-item"
+      <label class="checkables-item"
         ><input type="radio" name="sistema" value="windows" />Label</label
       >
       > RADIO GROUP
-      <fieldset class="radios">
-        <label
+      <fieldset class="checkables">
+        <label class="checkables-item"
           ><input type="radio" name="sistema" value="windows" />Disabled
           option</label
         >
-        <label
+        <label class="checkables-item"
           ><input type="radio" name="sistema" value="macos" />Checked
           option</label
         >
-        <label
+        <label class="checkables-item"
           ><input type="radio" name="sistema" value="linux" />Focused
           option</label
         >
-        <label
+        <label class="checkables-item"
           ><input type="radio" name="sistema" value="otro" />option 4</label
         >
-        <label
+        <label class="checkables-item"
           ><input type="radio" name="sistema" value="otro" />option 5</label
         >
       </fieldset>
@@ -84,25 +84,21 @@
       <input type="checkbox" name="html" value="si" checked />
       > CHECKED - DISABLED
       <input type="checkbox" name="html" value="si" checked disabled />
-      <fieldset>
-        <legend>¿Qué tecnologías dominas?</legend>
-        <label><input type="checkbox" name="html" value="si" />HTML</label>
-        <label><input type="checkbox" name="css" value="si" />CSS</label>
-        <label><input type="checkbox" name="js" value="si" />JavaScript</label>
-        <label><input type="checkbox" name="node" value="si" />Node.js</label>
-        <label
-          ><input type="checkbox" name="express" value="si" />Express</label
+      > CHECKED - ITEM
+      <input type="checkbox" name="html" value="si" checked disabled />
+      > CHECKED - GROUP
+      <label class="checkables-item"
+        ><input type="checkbox" name="html" value="si" />HTML</label
+      >
+      <fieldset class="checkables">
+        <label class="checkables-item"
+          ><input type="checkbox" name="html" value="si" />HTML</label
         >
-        <label
-          ><input
-            type="checkbox"
-            name="postgresql"
-            value="si"
-          />PostgreSQL</label
+        <label class="checkables-item"
+          ><input type="checkbox" name="css" value="si" />CSS</label
         >
-        <label><input type="checkbox" name="react" value="si" />React</label>
-        <label
-          ><input type="checkbox" name="tw" value="si" />Tailwind CSS</label
+        <label class="checkables-item"
+          ><input type="checkbox" name="js" value="si" />JavaScript</label
         >
       </fieldset>
 

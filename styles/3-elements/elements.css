@@ -115,3 +115,7 @@ input[type="radio"]:focus,
 input[type="checkbox"]:focus {
   outline: none;
 }
+
+fieldset {
+  border: none;
+}

@@ -1,0 +1,11 @@
+.checkables {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkables-item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  width: fit-content;
+}
