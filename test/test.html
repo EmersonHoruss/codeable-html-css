@@ -8,14 +8,116 @@
   </head>
   <body>
     <div style="display: grid; gap: 1rem; margin: 2rem">
-      <input type="text" value="HOLA" />
-      <input type="text" placeholder="HOla" />
-      <input type="text" disabled />
-      <textarea name=" id="" cols="30" rows="2" >Hola</textarea>
-      <textarea name=" id="" cols="30" rows="2" placeholder="Hola"></textarea>
-      <textarea name=" id="" cols="30" rows="2" disabled></textarea>
-      <input type="radio" />
-      <input type="radio" disabled />
+      >>>>>> INPUT COMPONENT <<<<<<
+      <br />
+      > DEFAULT
+      <input type="text" value="user@mail.com" />
+      > DISABLLED
+      <input type="text" value="user@mail.com" disabled />
+      > WITH PLACEHOLDER
+      <input type="text" placeholder="placeholder" />
+      > TYPE FILE
+      <input type="file" />
+
+      >>>>>> TEXT-AREA COMPONENT <<<<<<
+      <br />
+      > DEFAULT
+      <textarea name="" id="" cols="30" rows="2">
+        Velit sem bibendum quis consequat cras congue. Eget lectus tempor eget in ante faucibus sed. Netus amet aliquam urna.
+      </textarea>
+      > DISABLED
+      <textarea name="" id="" cols="30" rows="2" disabled>
+        Velit sem bibendum quis consequat cras congue. Eget lectus tempor eget in ante faucibus sed. Netus amet aliquam urna.
+      </textarea>
+      > WITH PLACEHOLDER
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="2"
+        placeholder="Velit sem bibendum quis consequat cras congue. Eget lectus tempor eget in ante faucibus sed. Netus amet aliquam urna."
+      ></textarea>
+
+      >>>>>> RADIO COMPONENT <<<<<<
+      <br />
+      > DEFAULT
+      <input type="radio" name="sistema1" value="windows" />
+      > DEFAULT - DISABLED
+      <input type="radio" name="sistema2" value="windows" disabled />
+      > CHECKED
+      <input type="radio" name="sistema3" value="macos" checked />
+      > CHECKED - DISABLED
+      <input type="radio" name="sistema4" value="macos" checked disabled />
+      > RADIO ITEM
+      <label class="radios-item"
+        ><input type="radio" name="sistema" value="windows" />Label</label
+      >
+      > RADIO GROUP
+      <fieldset class="radios">
+        <label
+          ><input type="radio" name="sistema" value="windows" />Disabled
+          option</label
+        >
+        <label
+          ><input type="radio" name="sistema" value="macos" />Checked
+          option</label
+        >
+        <label
+          ><input type="radio" name="sistema" value="linux" />Focused
+          option</label
+        >
+        <label
+          ><input type="radio" name="sistema" value="otro" />option 4</label
+        >
+        <label
+          ><input type="radio" name="sistema" value="otro" />option 5</label
+        >
+      </fieldset>
+
+      >>>>>> CHECKBOX COMPONENT <<<<<<
+      <br />
+      > DEFAULT
+      <input type="checkbox" name="html" value="si" />
+      > DEFAULT - DISABLED
+      <input type="checkbox" name="html" value="si" disabled />
+      > CHECKED
+      <input type="checkbox" name="html" value="si" checked />
+      > CHECKED - DISABLED
+      <input type="checkbox" name="html" value="si" checked disabled />
+      <fieldset>
+        <legend>¿Qué tecnologías dominas?</legend>
+        <label><input type="checkbox" name="html" value="si" />HTML</label>
+        <label><input type="checkbox" name="css" value="si" />CSS</label>
+        <label><input type="checkbox" name="js" value="si" />JavaScript</label>
+        <label><input type="checkbox" name="node" value="si" />Node.js</label>
+        <label
+          ><input type="checkbox" name="express" value="si" />Express</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="postgresql"
+            value="si"
+          />PostgreSQL</label
+        >
+        <label><input type="checkbox" name="react" value="si" />React</label>
+        <label
+          ><input type="checkbox" name="tw" value="si" />Tailwind CSS</label
+        >
+      </fieldset>
+
+      >>>>>> SELECT COMPONENT <<<<<<
+      <br />
+      > DEFAULT
+      <select id="pais" name="pais">
+        <option value="">Selecciona uno</option>
+        <option value="AR">Argentina</option>
+      </select>
+      > DISABLED
+      <select id="pais" name="pais" disabled>
+        <option value="">Selecciona uno</option>
+        <option value="AR">Argentina</option>
+      </select>
     </div>
 
     <div class="pancake-stack">
