@@ -1,14 +1,19 @@
 /* Author */
 
-.author > * {
-  display: inline-block;
+.author {
+  display: flex;
+  gap: var(--spacing-4);
 }
+/* .author > * {
+  display: inline-block;
+} */
 
 .author__avatar {
   width: 3rem;
   height: 3rem;
   object-fit: cover;
-  border-radius: 50%;
+  
+  border-radius: var(--rounded-full);
 }
 
 .author__info {

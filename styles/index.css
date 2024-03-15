@@ -31,9 +31,5 @@
 @import url(5-components/content.css);
 @import url(5-components/button.css);
 @import url(5-components/link.css);
-@import url(5-components/input.css);
-@import url(5-components/text-area.css);
-@import url(5-components/radio.css);
-@import url(5-components/check-box.css);
-@import url(5-components/select.css);
-@import url(5-components/form-field.css);
+@import url(5-components/checkables.css);
+@import url(5-components/footer-links.css);
