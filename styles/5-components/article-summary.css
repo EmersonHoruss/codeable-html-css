@@ -58,3 +58,23 @@
   padding-top: var(--spacing-6);
   border-top: 1px solid var(--border);
 }
+
+@media (min-width: 1025px) {
+  .article-summary {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+  }
+
+  .article-summary__image {
+    height: 100%;
+    max-height: 100%;
+  }
+
+  .article-summary__text {
+    margin-bottom: var(--spacing-6);
+  }
+
+  .article-summary__content {
+    margin-bottom: 0;
+  }
+}
