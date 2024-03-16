@@ -17,8 +17,9 @@
   border-radius: var(--rounded-2xl);
 }
 
-.article-summary__content {
-  max-width: var(--width-xl);
+.article-summary__content,
+.article-summary__footer {
+  max-width: var(--width-lg);
 }
 
 .article-summary .article-metadata {
