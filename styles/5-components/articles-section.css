@@ -39,9 +39,3 @@
     margin-inline: auto;
   }
 }
-
-@media (min-width: 1281px) {
-  .articles-section {
-    max-width: var(--width-5xl);
-  }
-}
